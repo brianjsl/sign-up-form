@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+:root {
+    --header-font: 'Norse';
+    --default-padding: 40px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 130vh;
+    font-family: 'Roboto';
+}
+
+.sidebar {
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    flex-shrink: 0;
+    flex-basis: auto;
+    background-color: black;
+    background-image: url('src/bread.jpg');
+    background-size: 800px;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar > .logos {
+    position: relative;
+    top: 20%;
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.sidebar img {
+    display: inline;
+    width: auto;
+    max-width: 30%; 
+    height: auto;
+}
+
+.sidebar h1 {
+    color: rgb(222, 222, 222);
+    font-family: var(--header-font);
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.sidebar footer {
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.sidebar footer a {
+    color: inherit;
+}
+
+.content {
+    background-color: rgb(222, 222, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.content .intro {
+    font-size: 20px;
+    font-weight: 900;
+    padding: var(--default-padding); 
+}
+
+.content .formContainer {
+    background-color: white;
+    color: black;
+    padding: var(--default-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.content form legend {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+
+input {
+    display: block;
+    padding: 5px;
+    width: 200px;
+}
+
+form .formInputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.passwordNote {
+    position: absolute;
+    color: red;
+    margin-top: 2px;
+}
+
+.passwordNote:not(.error) {
+    display: none;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+}
+
+input:focus {
+    border: 1px solid red;
+}
+
+.error {
+    border-color: red;   
+}
+
+button.submit {
+    padding: 15px 40px;
+    background-color: rgb(114, 59, 5);
+    color: white;
+    margin-left: var(--default-padding);
+    margin-top: var(--default-padding);
+    border-radius: 10px;
+    border: 0;
+    font-weight: 900;
+}
+
+footer.loginFooter {
+    margin-left: var(--default-padding);
+    margin-top: 20px;
+}
+
+footer.loginFooter > a {
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(114, 59, 5);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logos">
+            <img src="src/mit_logo.svg" alt="MIT Logo">
+            <h1>Dining</h1>
+        </div>
+        <footer>Photo by <a href="https://unsplash.com/@forkandtruffle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Say</a> on <a href="https://unsplash.com/t/food-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></footer>
+    </div>
+    <div class="content">
+        <p class="intro">
+            Welcome to the MIT Dining experience. Here, we will serve you <br>
+            with some of the most tastless food you will ever have tasted.<br>
+            But you're gonna eat it anway right? <br /> <br />
+
+            You <em>know</em> you're going to.
+        </p>
+        <form class="signup" action="#" method="post">
+            <div class="formContainer">
+                <legend>Let's do this!</legend>
+                <div class="formInputs">
+                    <div class="formInput">
+                        <label for="firstName" class="firstName">First Name</label>
+                        <input id="firstName" type="text" name="firstName" class="firstName" required>
+                    </div>
+                    <div class="formInput">
+                        <label for="lastName" class="lastName">Last Name</label>
+                        <input id="lastName" type="text" name="lastName" class="lastName" required>
+                    </div>
+                    <div class="formInput">
+                        <label for="email" class="email">Email</label>
+                        <input id="email" type="email" name="email" class="email" required>
+                    </div>
+                    <div class="formInput">
+                        <label for="phoneNum" class="phoneNum">Phone Number</label>
+                        <input id="phoneNum" type="tel" name="phoneNum" class="phoneNum">
+                    </div>
+                    <div class="formInput">
+                        <label for="pass" class="pass">Password</label>
+                        <input id="pass" type="password" name="pass" class="pass error" required>
+                        <p class="passwordNote error">* Passwords do not match</p>
+                    </div>
+                    <div class="formInput">
+                        <label for="confirmPass" class="confirmPass">Confirm Password</label>
+                        <input id="confirmPass" type="password" name="confirmPass" class="confirmPass error" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit">Create Account</button>
+            <footer class="loginFooter">Already have an account? <a href="loginpage">Log in</a></footer>
+        </form>
+    </div>
+</body>
+</html>
